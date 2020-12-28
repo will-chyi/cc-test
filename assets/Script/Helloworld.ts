@@ -12,6 +12,7 @@ export default class Helloworld extends cc.Component {
   start() {
     // init logic
     this.label.string = this.text;
+    cc.log('start');
   }
 
   update(dt: number) {
