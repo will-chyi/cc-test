@@ -4,8 +4,13 @@
   "description": "Hello world new project template.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "prettier 'assets/**/*.{js,ts}' --write && eslint --fix -c .eslintrc.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "repository": "git+https://github.com/will-chyi/cc-test.git",
   "author": "",
@@ -20,6 +25,8 @@
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",
+    "husky": "^4.3.6",
+    "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }
