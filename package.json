@@ -9,8 +9,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts}": "yarn lint"
   },
   "repository": "git+https://github.com/will-chyi/cc-test.git",
   "author": "",
@@ -27,6 +30,7 @@
     "eslint-plugin-prettier": "^3.3.0",
     "husky": "^4.3.6",
     "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }
